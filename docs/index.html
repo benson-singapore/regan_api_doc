@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+</head>
+
+<body>
+  <div id="app">加载中</div>
+  <script>
+    window.$docsify = {
+      loadSidebar: true,
+      coverpage: true,
+      loadNavbar: false,
+      subMaxLevel: 4,
+      auto2top: true,
+      name: 'Regan_API',
+      repo: 'https://github.com/zhangbiy/regan_api',
+      search: {
+        noData: {
+          '/': '没有结果!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': '搜索'
+        }
+      },
+      plugins: [
+        function(hook) {
+          var footer = [
+            '<footer>',
+            '<span><a href="http://t.cn/ReciafA">regan_jeff</a> &copy;2017.</span>',
+            '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+            '</footer>'
+          ].join('')
+
+          hook.afterEach(function(html) {
+            return html + footer
+          })
+        }
+      ]
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <!-- Prism -->
+  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-properties.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '16f2393be765b35dc2b0',
+      clientSecret: '59d385e01b92f957fed8b488173aa1e7aa6a567f',
+      repo: 'blog_gitalk',
+      owner: 'zhangbiy',
+      admin: ['zhangbiy'],
+      id: 'blog',
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+  </script>
+</body>
+
+</html>
