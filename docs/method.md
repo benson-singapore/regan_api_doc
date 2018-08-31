@@ -13,6 +13,7 @@
  * @resqParam data|数据|object|非必填
  * @resqParam msg|消息信息|String|必填
  * @respBody {"code":"000","data":"","msg":"success"}
+ * @requestType post,get
  * @author zhangby
  * @date 2018/6/12 下午4:23
  */
@@ -92,6 +93,13 @@ public void login() {
       "msg":"success"
   }`
   - 说明：返回参数示例，`json字符串`
+
+### @requestType
+  - 类型：String
+  - 默认值：null
+  - 可否为空：可为空
+  - 样例：`@requestType post`
+  - 说明：数据请求类型，多个请求用逗号间隔`@requestType post,get`
 
 
 ### @author
