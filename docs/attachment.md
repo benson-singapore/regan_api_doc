@@ -8,7 +8,7 @@
 
 #### 本地启动
  - 依赖node环境，可自行安装
- - gitee上下载[Regan_API_Source](https://gitee.com/regan_jeff/Regan_API_Source)项目源码
+ - gitee上下载[Regan_API_Source](https://gitee.com/regan_org/Regan_API_Source)项目源码
  - 初始化，进入项目根目录初始化项目。 `npm init`
  - 项目启动，`npm start`
  - 项目构建，`npm build`
