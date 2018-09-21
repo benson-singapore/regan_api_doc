@@ -2,7 +2,7 @@
 
 #### api页面功能定制
 
-?> 如果需要对页面功能进行修改和单独定制的话，可在gitee上下载源码进行自由定制。地址：[https://gitee.com/regan_jeff/Regan_API_Source](https://gitee.com/regan_jeff/Regan_API_Source)
+?> 如果需要对页面功能进行修改和单独定制的话，可在gitee上下载源码进行自由定制。地址：[https://gitee.com/regan_org/Regan_API_Source](https://gitee.com/regan_org/Regan_API_Source)
 
 该项目是基于`react`开发的，前端ui基于阿里`飞冰`。项目启动部署与编译如果对node不熟悉可借助飞冰[ICEWorks](https://alibaba.github.io/ice/iceworks)工具,如果对node熟悉的话可借助命令去编译启动项目。
 
